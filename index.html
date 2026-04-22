@@ -1,81 +1,182 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vegas Men's Fashion</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegas Men's Fashion</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<header>
-    <div class="container nav">
-        <img src="logo.png" class="logo" alt="Vegas Men's Fashion Logo">
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#products">Products</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </div>
-</header>
-
-<section id="home" class="hero">
-    <div class="hero-content">
-        <h1>Premium Men's Fashion</h1>
-        <p>Stylish T-Shirts & Jeans at the Best Price</p>
-        <a class="btn" href="#products">Shop Collection</a>
-    </div>
-</section>
-
-<section id="products" class="container">
-    <h2>Featured Products</h2>
-    <div class="products">
-
-        <div class="product">
-            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="T-Shirt">
-            <h3>Premium Black T-Shirt</h3>
-            <p>₹599</p>
+    <header>
+        <div class="nav container">
+            <img src="logo.png" class="logo">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
+    </header>
 
-        <div class="product">
-            <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c" alt="Jeans">
-            <h3>Men's Blue Jeans</h3>
-            <p>₹999</p>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Vegas Men's Fashion</h1>
+            <p>Premium Style For Modern Men</p>
+            <a href="#products" class="btn">Explore Collection</a>
         </div>
+    </section>
 
-        <div class="product">
-            <img src="https://images.unsplash.com/photo-1593032465171-8f0c2c2d76f5" alt="Combo">
-            <h3>Shirt + Jeans Combo</h3>
-            <p>₹1499</p>
+    <section id="products" class="container">
+        <h2>Products</h2>
+
+        <div class="products" id="productContainer">
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+                <h3>Premium Black T-Shirt</h3>
+                <p>₹599</p>
+                <button onclick="order()">Order on WhatsApp</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c">
+                <h3>Blue Denim Jeans</h3>
+                <p>₹999</p>
+                <button onclick="order()">Order on WhatsApp</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1593032465171-8f0c2c2d76f5">
+                <h3>Combo Offer</h3>
+                <p>₹1499</p>
+                <button onclick="order()">Order on WhatsApp</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b">
+                <h3>White Stylish Shirt</h3>
+                <p>₹799</p>
+                <button onclick="order()">Order on WhatsApp</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38">
+                <h3>Black Slim Jeans</h3>
+                <p>₹1099</p>
+                <button onclick="order()">Order on WhatsApp</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1520975693413-76d4c0cbe1d3">
+                <h3>Oversized T-Shirt</h3>
+                <p>₹699</p>
+                <button onclick="order()">Order on WhatsApp</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c">
+                <h3>Grey Denim Jeans</h3>
+                <p>₹999</p>
+                <button onclick="order()">Order on WhatsApp</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d">
+                <h3>Premium Casual Shirt</h3>
+                <p>₹899</p>
+                <button onclick="order()">Order on WhatsApp</button>
+
+            </div>
+
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Fashion Gallery</h2>
+        <div class="gallery-grid">
+
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+
         </div>
+    </section>
 
-    </div>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                Vegas Men's Fashion is a growing men's fashion brand focused on
+                delivering modern style with confidence and comfort.
+                Based in Solapur, our store offers a curated collection of
+                trendy t-shirts, premium shirts, and stylish denim jeans designed for today's modern man.
 
-    <p class="note">You can add or change products anytime.</p>
-</section>
+                We believe that fashion should be simple, stylish, and accessible to everyone.
+                Our mission is to provide high-quality clothing that combines
+                the latest fashion trends with comfort and durability.
+                Each piece in our collection is carefully selected to ensure
+                great fitting, premium fabric, and long-lasting style.
 
-<section id="about" class="about">
-    <div class="container">
-        <h2>About Vegas Men's Fashion</h2>
-        <p>
-        Vegas Men's Fashion is a premium men's clothing shop in Solapur offering stylish 
-        t-shirts, jeans, and modern fashion at affordable prices. We focus on quality, 
-        comfort, and the latest trends for men.
-        </p>
-    </div>
-</section>
+                At Vegas Men's Fashion, we are not just selling clothes—we are building a fashion experience
+                where every customer feels confident in what they wear. Our goal is to become a trusted destination
+                for men who want to look stylish without compromising on quality or affordability.
 
-<section id="contact" class="container contact">
-    <h2>Contact Us</h2>
-    <p><strong>Address:</strong> Shop No 6, Jay Vijay Residency, Near Dajii Ganpati, Solapur 413005</p>
-    <p><strong>WhatsApp Orders:</strong> <a href="https://wa.me/918378917281">8378917281</a></p>
-</section>
+                Vegas Men's Fashion – Style That Defines Men.
+            </p>
+        </div>
+    </section>
 
-<footer>
-    <p>© 2026 Vegas Men's Fashion | All Rights Reserved</p>
-</footer>
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+
+        <p><b>Address:</b> Shop No 6, Jay Vijay Residency, Near Dajii Ganpati, Solapur 413005</p>
+
+        <p><b>WhatsApp:</b> 8378917281</p>
+
+        <iframe src="https://maps.google.com/maps?q=solapur&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%"
+            height="300"></iframe>
+
+    </section>
+
+    <a class="whatsapp-float" href="https://wa.me/918378917281">Chat</a>
+
+    <section style="background:black; color:white; padding:50px; text-align:center;">
+        <h2>Customer Reviews ⭐</h2>
+
+        <div style="margin-top:30px;">
+
+            <div style="margin-bottom:20px;">
+                ⭐⭐⭐⭐⭐
+                <p>"Amazing quality jeans and perfect fitting!"</p>
+                <b>- Rahul</b>
+            </div>
+
+            <div style="margin-bottom:20px;">
+                ⭐⭐⭐⭐⭐
+                <p>"Best men's fashion shop. Loved the shirts!"</p>
+                <b>- Aman</b>
+            </div>
+
+            <div style="margin-bottom:20px;">
+                ⭐⭐⭐⭐⭐
+                <p>"Very stylish collection and affordable prices."</p>
+                <b>- Karan</b>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Vegas Men's Fashion</p>
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
